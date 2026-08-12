@@ -32,8 +32,7 @@
   <!-- Hero -->
   <div class="hero">
     <div class="hero-bg">
-      <!-- ↓ メイン画像をここに差し替えてください -->
-      <div class="img-placeholder" style="font-size:0.8rem;">HERO IMAGE<br>推奨: 1600×900px</div>
+      <img src="hero.jpg" alt="WooferLOOPer">
     </div>
     <div class="hero-content">
       <p class="hero-eyebrow">Official Website</p>
@@ -47,22 +46,21 @@
     <p class="section-label">Works</p>
     <h2 class="section-title">DISCOGRAPHY</h2>
     <div class="disc-grid">
-      <!-- ↓ アルバムアートを差し替えてください -->
       <div class="disc-card" onclick="showPage('discography')">
-        <div class="img-placeholder">ARTWORK 1</div>
-        <div class="disc-card-label">タイトル 1</div>
+        <img src="artwork1LullabyLullaby.jpg" alt="Lullaby Lullaby">
+        <div class="disc-card-label">Lullaby Lullaby</div>
       </div>
       <div class="disc-card" onclick="showPage('discography')">
-        <div class="img-placeholder">ARTWORK 2</div>
-        <div class="disc-card-label">タイトル 2</div>
+        <img src="artwork2PlanetFuzz.jpg" alt="Planet Fuzz">
+        <div class="disc-card-label">Planet Fuzz</div>
       </div>
       <div class="disc-card" onclick="showPage('discography')">
-        <div class="img-placeholder">ARTWORK 3</div>
-        <div class="disc-card-label">タイトル 3</div>
+        <img src="artwork3RainGutters.jpg" alt="Rain Gutters">
+        <div class="disc-card-label">Rain Gutters</div>
       </div>
       <div class="disc-card" onclick="showPage('discography')">
-        <div class="img-placeholder">ARTWORK 4</div>
-        <div class="disc-card-label">タイトル 4</div>
+        <img src="artwork4Blossom.jpg" alt="Blossom">
+        <div class="disc-card-label">Blossom</div>
       </div>
     </div>
     <a href="#" class="view-more" onclick="showPage('discography')">VIEW MORE</a>
@@ -103,8 +101,7 @@
     <h2 class="section-title">ABOUT</h2>
     <div class="about-grid">
       <div class="about-img">
-        <!-- ↓ プロフィール画像を差し替えてください -->
-        <div class="img-placeholder" style="height:400px;">PROFILE IMAGE<br>推奨: 600×800px</div>
+        <img src="profile.jpg" alt="WooferLOOPer profile">
       </div>
       <div class="about-text">
         <!-- ↓ プロフィール文を差し替えてください -->
@@ -137,20 +134,25 @@
     <p class="section-label">Visuals</p>
     <h2 class="section-title">VIDEO</h2>
     <div class="video-grid">
-      <!-- ↓ YouTube動画IDを差し替えてください（例: dQw4w9WgXcQ） -->
+      <!-- ↓ VIDEO_ID を実際のYouTube動画IDに差し替えてください -->
+      <!-- YouTubeのURL例: https://www.youtube.com/watch?v=dQw4w9WgXcQ → IDは dQw4w9WgXcQ -->
       <div class="video-item">
-        <div class="video-thumb" onclick="openYoutube('-n5WBLnRz54')">
-          <div class="img-placeholder" style="height:170px;">THUMBNAIL 1</div>
+        <div class="video-thumb" onclick="openYoutube('YOUR_VIDEO_ID_1')">
+          <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_1/maxresdefault.jpg"
+               onerror="this.src='https://img.youtube.com/vi/YOUR_VIDEO_ID_1/hqdefault.jpg'"
+               alt="動画タイトル 1">
           <div class="play-btn"></div>
         </div>
         <div class="video-info">
-          <p class="video-title">YAMAHA SEQTRAK techno beat</p>
+          <p class="video-title">動画タイトル 1</p>
           <p class="video-meta">2026.01.01</p>
         </div>
       </div>
       <div class="video-item">
         <div class="video-thumb" onclick="openYoutube('YOUR_VIDEO_ID_2')">
-          <div class="img-placeholder" style="height:170px;">THUMBNAIL 2</div>
+          <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_2/maxresdefault.jpg"
+               onerror="this.src='https://img.youtube.com/vi/YOUR_VIDEO_ID_2/hqdefault.jpg'"
+               alt="動画タイトル 2">
           <div class="play-btn"></div>
         </div>
         <div class="video-info">
@@ -160,7 +162,9 @@
       </div>
       <div class="video-item">
         <div class="video-thumb" onclick="openYoutube('YOUR_VIDEO_ID_3')">
-          <div class="img-placeholder" style="height:170px;">THUMBNAIL 3</div>
+          <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_3/maxresdefault.jpg"
+               onerror="this.src='https://img.youtube.com/vi/YOUR_VIDEO_ID_3/hqdefault.jpg'"
+               alt="動画タイトル 3">
           <div class="play-btn"></div>
         </div>
         <div class="video-info">
@@ -183,12 +187,11 @@
     <p class="section-label">Works</p>
     <h2 class="section-title">DISCOGRAPHY</h2>
     <div class="disco-full">
-      <!-- ↓ 作品情報を差し替えてください -->
       <div class="release-card">
         <div class="release-art">
-          <div class="img-placeholder" style="height:220px;">ARTWORK 1</div>
+          <img src="artwork1LullabyLullaby.jpg" alt="Lullaby Lullaby">
         </div>
-        <p class="release-title">作品タイトル 1</p>
+        <p class="release-title">Lullaby Lullaby</p>
         <p class="release-year">2025</p>
         <div class="release-tags">
           <span class="tag">Album</span>
@@ -201,9 +204,9 @@
       </div>
       <div class="release-card">
         <div class="release-art">
-          <div class="img-placeholder" style="height:220px;">ARTWORK 2</div>
+          <img src="artwork2PlanetFuzz.jpg" alt="Planet Fuzz">
         </div>
-        <p class="release-title">作品タイトル 2</p>
+        <p class="release-title">Planet Fuzz</p>
         <p class="release-year">2024</p>
         <div class="release-tags">
           <span class="tag">EP</span>
@@ -215,9 +218,9 @@
       </div>
       <div class="release-card">
         <div class="release-art">
-          <div class="img-placeholder" style="height:220px;">ARTWORK 3</div>
+          <img src="artwork3RainGutters.jpg" alt="Rain Gutters">
         </div>
-        <p class="release-title">作品タイトル 3</p>
+        <p class="release-title">Rain Gutters</p>
         <p class="release-year">2023</p>
         <div class="release-tags">
           <span class="tag">Single</span>
@@ -228,9 +231,9 @@
       </div>
       <div class="release-card">
         <div class="release-art">
-          <div class="img-placeholder" style="height:220px;">ARTWORK 4</div>
+          <img src="artwork4Blossom.jpg" alt="Blossom">
         </div>
-        <p class="release-title">作品タイトル 4</p>
+        <p class="release-title">Blossom</p>
         <p class="release-year">2022</p>
         <div class="release-tags">
           <span class="tag">Album</span>
