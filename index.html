@@ -137,39 +137,39 @@
       <!-- ↓ VIDEO_ID を実際のYouTube動画IDに差し替えてください -->
       <!-- YouTubeのURL例: https://www.youtube.com/watch?v=dQw4w9WgXcQ → IDは dQw4w9WgXcQ -->
       <div class="video-item">
-        <div class="video-thumb" onclick="openYoutube('YOUR_VIDEO_ID_1')">
-          <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_1/maxresdefault.jpg"
-               onerror="this.src='https://img.youtube.com/vi/YOUR_VIDEO_ID_1/hqdefault.jpg'"
-               alt="動画タイトル 1">
+        <div class="video-thumb" onclick="openYoutube('-n5WBLnRz54')">
+          <img src="https://img.youtube.com/vi/-n5WBLnRz54/maxresdefault.jpg"
+               onerror="this.src='https://img.youtube.com/vi/-n5WBLnRz54/hqdefault.jpg'"
+               alt="Video 1">
           <div class="play-btn"></div>
         </div>
         <div class="video-info">
-          <p class="video-title">動画タイトル 1</p>
+          <p class="video-title">Video 1</p>
           <p class="video-meta">2026.01.01</p>
         </div>
       </div>
       <div class="video-item">
-        <div class="video-thumb" onclick="openYoutube('YOUR_VIDEO_ID_2')">
-          <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_2/maxresdefault.jpg"
-               onerror="this.src='https://img.youtube.com/vi/YOUR_VIDEO_ID_2/hqdefault.jpg'"
-               alt="動画タイトル 2">
+        <div class="video-thumb" onclick="openYoutube('YcTEFaV6mck')">
+          <img src="https://img.youtube.com/vi/YcTEFaV6mck/maxresdefault.jpg"
+               onerror="this.src='https://img.youtube.com/vi/YcTEFaV6mck/hqdefault.jpg'"
+               alt="Video 2">
           <div class="play-btn"></div>
         </div>
         <div class="video-info">
-          <p class="video-title">動画タイトル 2</p>
-          <p class="video-meta">2025.12.01</p>
+          <p class="video-title">Video 2</p>
+          <p class="video-meta">2026.01.01</p>
         </div>
       </div>
       <div class="video-item">
-        <div class="video-thumb" onclick="openYoutube('YOUR_VIDEO_ID_3')">
-          <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_3/maxresdefault.jpg"
-               onerror="this.src='https://img.youtube.com/vi/YOUR_VIDEO_ID_3/hqdefault.jpg'"
-               alt="動画タイトル 3">
+        <div class="video-thumb" onclick="openYoutube('J129dfTx1u0')">
+          <img src="https://img.youtube.com/vi/J129dfTx1u0/maxresdefault.jpg"
+               onerror="this.src='https://img.youtube.com/vi/J129dfTx1u0/hqdefault.jpg'"
+               alt="Video 3">
           <div class="play-btn"></div>
         </div>
         <div class="video-info">
-          <p class="video-title">動画タイトル 3</p>
-          <p class="video-meta">2025.11.01</p>
+          <p class="video-title">Video 3</p>
+          <p class="video-meta">2026.01.01</p>
         </div>
       </div>
     </div>
@@ -260,11 +260,11 @@
     <h2 class="section-title">LINK</h2>
     <div class="link-list">
       <!-- ↓ 各URLを差し替えてください -->
-      <a href="https://bandcamp.com/" target="_blank" class="link-item">Bandcamp</a>
-      <a href="https://soundcloud.com/" target="_blank" class="link-item">SoundCloud</a>
+      <a href="https://wooferlooper.bandcamp.com/" target="_blank" class="link-item">Bandcamp</a>
+      <a href="https://soundcloud.com/wooferlooper" target="_blank" class="link-item">SoundCloud</a>
       <a href="https://open.spotify.com/" target="_blank" class="link-item">Spotify</a>
       <a href="https://music.apple.com/" target="_blank" class="link-item">Apple Music</a>
-      <a href="https://youtube.com/" target="_blank" class="link-item">YouTube</a>
+      <a href="https://www.youtube.com/@WooferLOOPer" target="_blank" class="link-item">YouTube</a>
       <a href="https://twitter.com/" target="_blank" class="link-item">Twitter / X</a>
       <a href="https://instagram.com/" target="_blank" class="link-item">Instagram</a>
       <a href="https://note.com/" target="_blank" class="link-item">note</a>
@@ -294,7 +294,11 @@ document.getElementById('hamburger').addEventListener('click', function() {
 });
 
 document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', function(e) { e.preventDefault(); });
+  a.addEventListener('click', function(e) {
+    if (!this.getAttribute('href').startsWith('http')) {
+      e.preventDefault();
+    }
+  });
 });
 
 function openYoutube(id) {
